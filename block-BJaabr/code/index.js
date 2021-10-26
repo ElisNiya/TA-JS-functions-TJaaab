@@ -42,12 +42,18 @@ Do the following with above problem.
 
 // - Write a Function Declaration
 
+function add(numA,numB){
+return numA+numB;
+}
+
 // - Write a Function Expression
-
+let sum = function add(numA,numB){
+  return numA+numB)
+ }
 // - Write an Arrow Function without curly brackets(if possible)
-
+(numA,numB) => numA + numB;
 // - Write an Arrow Function with curly brackets
-
+(numA,numB) => { numA+numB }
 // - Execute the function
 
 // - Execute the function and store the return value in a variable.
