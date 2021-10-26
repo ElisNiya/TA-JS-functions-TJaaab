@@ -12,7 +12,7 @@ Example:
   getFullName("John", "Snow"); // "John Snow"
   getFullName("Nelson", "Mandela"); // "Nelson Mandela"
 */
-
+function getFullName(firstName,lastName){}
 /*
 3. Create a function named `addTwoNumbers` that accepts two numbers i.e `firstNum` and `secondNum` and returns
 the sum of both numbers. If user passes any data other then numbers alert a message saying `Enter Valid Input`
@@ -22,7 +22,14 @@ addTwoNumbers(10, 22); // 32
 addTwoNumbers(20, 32); // 32
 addTwoNumbers(10, "100"); // Alert Enter Valid Input
 */
-
+function addTwoNumbers(firstNum, secondNum) {
+  if(typeof firstNum !== 'number' || 
+     typeof secondNum !== 'number') {
+  alet('Enter valid input')
+  }else {
+    return firstNum + secondNum;
+  }
+}
 /*
 4. Create a function named `calc` which accepts three parameter `numA`, `numB` and `operation`. Operation
 can only be one of these `add, sub, mul, div`. Based on the operator return the value. If the `numA` or `numB`
@@ -35,7 +42,30 @@ calc(20, 10, 'sub'); // 10
 calc(20, 10, 'mul'); // 200
 */
 
-
+ function calc(numA, numB, operation){
+    if(typeof firstNum !== 'number' || 
+     typeof secondNum !== 'number') {
+  alet('Enter valid input')
+  }else {
+    switch(operation){
+      case 'add':
+        return firstNum + secondNum;
+        break;
+      case 'sub':
+        return firstNum - secondNum;
+        break;
+      case 'mul':
+        return firstNum * secondNum;
+        break;
+      case 'div':
+        return firstNum / secondNum;
+        break;
+     
+      default:
+        alert('Enter valid operation');
+    }
+  }
+ }
 /*
 5. Create a function named `isLeapYear` that accepts a number data type and return `true` or `false` based
 on if the year id leap year or not.
