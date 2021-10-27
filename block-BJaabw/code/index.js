@@ -11,8 +11,9 @@ minToSec(2) ➞ 120
 */
 
 // - Write a Function Decleration for above problem
-function minToSec() {
-  // Your code
+function minToSec(min) {
+    let seconds = min * 60;
+    return seconds;
 }
 // - Execute the function with required parameter
 
@@ -26,8 +27,12 @@ isInRange(1, 10, 19); // false
 */
 
 // - Write a Function Decleration for above problem
-function isInRange() {
-  // Your code
+function isInRange(lowerNr, upperNr, nr) {
+    if(nr >lowerNr && nr<upperNr){
+    return "true"
+    }else{
+    return "false"
+    }
 }
 // - Execute the function with required parameter
 
@@ -49,9 +54,13 @@ Obese: BMI is 30 or more
 
 */
 
-function calculateBMI() {
-  // Your code
-}
+function calculateBMI(weight, height) {
+ let bmi = weight/(height * height);
+  if (bmi > 18.5 && bmi <24.9) {
+  return "underweight"
+  }else if...
+ 
+ }
 
 /* 3. appropiateDrinks
 
@@ -64,8 +73,10 @@ Create a function that take the age are return the appropiate drink based on the
 
 */
 
-function appropiateDrinks() {
-  // Your code
+function appropiateDrinks(age) {
+  if(age < 14) {
+  return "fruit juice";
+  }else if () {}
 }
 
 /* 4. Add two numers or string
@@ -79,8 +90,8 @@ Twist is when user passes anything other than number, or string value you should
 
 */
 
-function sum() {
-  // Your code
+function sum(a,b) {
+    let sum = a + b;
 }
 
 // Function Test
