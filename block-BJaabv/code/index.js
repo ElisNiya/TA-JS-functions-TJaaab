@@ -34,7 +34,7 @@ function calculateMoviesToWatch(age, numberMovies) {
 */
 
 function celsiusToFahrenheit(celsius) {
-  let fahrenheit = celsius *...
+  let fahrenheit = (celsius *9) /5 +32;
   return fahrenheit;
 }
 
@@ -57,9 +57,10 @@ function celsiusToFahrenheit() {
 */
 
 function pow(x, n) {
-   return x * n;
    if (n<0){
    return "The nr is below 1")
+   } else {
+      return x * n;
    }
 }
 
@@ -75,7 +76,22 @@ and return sum or product of 1,…,n. If user enters any other value than `sum` 
 */
 
 function sumOrProductOfN() {
-  // Your code goes here
+    if(operation === "sum"){
+      let sum = 0;
+         for(let i = 1; i<=n; i++) {
+           sum += i;
+         }
+      return sum;
+    } else if (operation === "product") {
+    let product = 1;
+          for(let i=1; i<= num; i++) {
+          product *= i;
+          }
+     return product;
+    } else {
+    
+    return "Not a valid input";
+    }
 }
 
 sumOrProductOfN(4, 'sum'); // 10
@@ -87,21 +103,33 @@ sumOrProductOfN(4, 'hello'); // alert "Not a valid Input"
 */
 
 function sumOfN() {
-  // Your code goes here
+      let sum = 0;
+         for(let i = 1; i<=n; i++) {
+           sum += i;
+         }
+      return sum;
 }
-
 /*
 7. 🎖Modify the previous program such that only multiples of 5 or 7 are considered in the sum, e.g. n = 20 (5,7,10,14,15,20) 71
 */
 
-// Your code goes here
+function sumOfN() {
+      let sum = 0;
+         for(let i = 1; i<=n; i++) {
+          if( i % 5=== 0|| i % 7 === 0) {
+             sum += i;
+           }
+         }
+  return sum;
+ }
 
 /*
 8. 🎖Write a function `min` that takes two arguments and returns their minimum.
 */
 
-function min() {
-  // Your code goes here
+function min(a, b) {
+   if(a<b) return a;
+   if(b<a) return b;
 }
 
 min(0, 10);
@@ -111,6 +139,6 @@ min(0, -10);
 9. 🎖Write a JavaScript function which accepts an argument and returns the type of the value.
 */
 
-function typeCheck() {
-  // Your code goes here
+function typeCheck(argument) {
+return type of argument;
 }
